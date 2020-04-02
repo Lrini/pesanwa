@@ -79,19 +79,19 @@ if (isset($_POST["cari"])) {
 	</form>
     
               <script>
-					$(document).ready(function(){ // Ketika halaman sudah siap (sudah selesai di load)
-						$("#check-all").click(function(){ // Ketika user men-cek checkbox all
-							if($(this).is(":checked")) // Jika checkbox all diceklis
-								$(".check-item").prop("checked", true); // ceklis semua checkbox siswa dengan class "check-item"
-							else // Jika checkbox all tidak diceklis
-								$(".check-item").prop("checked", false); // un-ceklis semua checkbox siswa dengan class "check-item"
+					$(document).ready(function(){ 
+						$("#check-all").click(function(){ 
+							if($(this).is(":checked")) 
+								$(".check-item").prop("checked", true); 
+							else 
+								$(".check-item").prop("checked", false); 
 						});
 						
-						$("#btn-delete").click(function(){ // Ketika user mengklik tombol delete
-							var confirm = window.confirm("Apakah Anda yakin ingin mengirim pesan ini?"); // Buat sebuah alert konfirmasi
+						$("#btn-delete").click(function(){ 
+							var confirm = window.confirm("Apakah Anda yakin ingin mengirim pesan ini?"); 
 							
-							if(confirm) // Jika user mengklik tombol "Ok"
-								$("#form-delete").submit(); // Submit form
+							if(confirm)
+								$("#form-delete").submit(); 
 						});
 					});
 			</script>
